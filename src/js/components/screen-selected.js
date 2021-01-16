@@ -7,6 +7,7 @@ navChilds[0].addEventListener('click', (e) => {
 });
 
 navChilds[1].addEventListener('click', (e) => {
+    alert(GITHUB_WORKFLOW);
     window.location.href = `${origin}/html/characters.html`;
 
 });
