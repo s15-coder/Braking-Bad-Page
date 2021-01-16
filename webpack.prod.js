@@ -74,6 +74,18 @@ module.exports = {
             filename: './html/characters.html',
             chunks: ["characters"]
         }),
+        new HtmlWebPackPlugin({
+            template: './src/html/episodes.html',
+            filename: './html/episodes.html',
+            // chunks: ["episodes"]
+        }),
+
+        new HtmlWebPackPlugin({
+            template: './src/html/deaths.html',
+            filename: './html/deaths.html',
+            // chunks: ["deaths"]
+        }),
+
         new CopyWebpackPlugin({
             patterns: [
                 { from: 'src/css/static', to: 'css/static' },

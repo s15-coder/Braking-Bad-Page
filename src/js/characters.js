@@ -1,3 +1,3 @@
-
-import {paintBottomBorder} from "./components/screen-selected";
+import "./components/drawer-listener";
+import { paintBottomBorder } from "./components/screen-selected";
 paintBottomBorder(1);

@@ -14,7 +14,6 @@ menuButton.addEventListener("click", function (e) {
 });
 
 menuButton.addEventListener("mouseout", function (e) {
-console.log(e.target);
     navLinks.style.left = "-100vw"
     pushed = false;
 });
