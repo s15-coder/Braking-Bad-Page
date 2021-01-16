@@ -6,25 +6,31 @@ if(origin == "https://s15-coder.github.io/"){
 }
 
 navChilds[0].addEventListener('click', (e) => {
+    alert(origin);
     window.location.href = origin;
 });
 
 navChilds[1].addEventListener('click', (e) => {
+    alert(origin);
     window.location.href = `${origin}/html/characters.html`;
 
 });
 navChilds[2].addEventListener('click', (e) => {
+    alert(origin);
     window.location.href = `${origin}/html/episodes.html`;
 
 });
 navChilds[3].addEventListener('click', (e) => {
+    alert(origin);
     window.location.href = `${origin}/html/quotes.html`;
 });
 navChilds[4].addEventListener('click', (e) => {
+    alert(origin);
     window.location.href = `${origin}/html/deaths.html`;
 });
 
 export function paintBottomBorder(idDiv) {
+    alert(origin);
     navChilds[idDiv].className += " selected";
 }
 
