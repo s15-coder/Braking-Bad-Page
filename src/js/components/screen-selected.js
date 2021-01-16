@@ -25,7 +25,6 @@ navChilds[4].addEventListener('click', (e) => {
 });
 
 export function paintBottomBorder(idDiv) {
-    alert(origin);
     navChilds[idDiv].className += " selected";
 }
 
