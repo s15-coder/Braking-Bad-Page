@@ -12,6 +12,10 @@ module.exports = {
     entry: {
         index: "./src/js/index.js",
         characters: "./src/js/characters.js",
+        episodes: "./src/js/episodes.js",
+        quotes: "./src/js/quotes.js",
+        characters: "./src/js/characters.js",
+        deaths: "./src/js/deaths.js",
     },
     output: {
         filename: "js/pages/[name].[contentHash].js"
@@ -74,16 +78,22 @@ module.exports = {
             filename: './html/characters.html',
             chunks: ["characters"]
         }),
+
         new HtmlWebPackPlugin({
             template: './src/html/episodes.html',
             filename: './html/episodes.html',
-            // chunks: ["episodes"]
+            chunks: ["episodes"]
         }),
 
         new HtmlWebPackPlugin({
             template: './src/html/deaths.html',
             filename: './html/deaths.html',
-            // chunks: ["deaths"]
+            chunks: ["deaths"]
+        }),
+        new HtmlWebPackPlugin({
+            template: './src/html/quotes.html',
+            filename: './html/quotes.html',
+            chunks: ["quotes"]
         }),
 
         new CopyWebpackPlugin({
