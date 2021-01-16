@@ -1,7 +1,7 @@
 let navChilds = document.querySelectorAll(".links");
-const origin = window.location.origin;
+let origin = window.location.origin;
 
-if(origin == "https://s15-coder.github.io/"){
+if(origin == "https://s15-coder.github.io"){
         origin = "https://s15-coder.github.io/"+"Braking-Bad-Page";
 }
 
