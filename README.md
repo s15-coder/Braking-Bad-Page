@@ -1,10 +1,5 @@
-# Webpack-Configuration
-This folder contains the neccesaries configurations to working with webpack.
+# Breaking Bad - Web Page
 
-To start project with node-modules and respective dependencies execute de command "npm install"
+Esta es una pagina web hecha en JS, HTML y CSS. Fue construida usando Webpack y haciendo uso de la libreria babel.
 
-## Don't forget apply the next commands to work with the project.
-
-```
-npm install
-```
+No olvidar ejecutar comando ```npm install```
