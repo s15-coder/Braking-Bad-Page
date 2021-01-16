@@ -1,6 +1,7 @@
 let navChilds = document.querySelectorAll(".links");
 // const origin = window.location.origin;
 navChilds[0].addEventListener('click', (e) => {
+    alert(GITHUB_WORKFLOW);
     window.location.href = origin;
     
 });
