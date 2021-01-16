@@ -1,13 +1,15 @@
 let navChilds = document.querySelectorAll(".links");
-// const origin = window.location.origin;
+const origin = window.location.origin;
+
+if(origin == "https://s15-coder.github.io/"){
+        origin = "https://s15-coder.github.io/"+"Braking-Bad-Page";
+}
+
 navChilds[0].addEventListener('click', (e) => {
-    alert(GITHUB_WORKFLOW);
     window.location.href = origin;
-    
 });
 
 navChilds[1].addEventListener('click', (e) => {
-    alert(GITHUB_WORKFLOW);
     window.location.href = `${origin}/html/characters.html`;
 
 });
