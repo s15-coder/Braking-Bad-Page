@@ -1,5 +1,6 @@
 export class Provider{
-    constructor(){
-        this.baseUrl = "https://www.breakingbadapi.com/api/ ";
+    constructor(localUrl){
+        this.baseUrl = "https://www.breakingbadapi.com/api";
+        this.localUrl  = localUrl;
     }
 }

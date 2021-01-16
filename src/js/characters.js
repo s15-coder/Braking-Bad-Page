@@ -1,3 +1,8 @@
+//Dependency to enable async functions and promises.
+import 'regenerator-runtime/runtime';
+//Styles
+import "../css/styles-characters.css";
+
 import "./components/drawer-listener";
 import { paintBottomBorder } from "./components/screen-selected";
 import { CharacterProvider } from "./providers/provider-character";

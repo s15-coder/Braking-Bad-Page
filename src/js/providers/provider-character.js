@@ -1,11 +1,9 @@
 import { Provider } from "./provider";
 
 export class CharacterProvider extends Provider{
-    constructor(){
-        this.localUrl = "/characters";
-    }
+
 async getCharacters(){
-    let res = await fetch(super.baseUrl+this.localUrl);
+    let res = await fetch(this.baseUrl+"/characters?limit=10&offset=70", {method: "get", });
    return await res.json();
 }
 }
