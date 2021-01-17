@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:prod": "webpack --config webpack.prod.js",
     "build:dev": "webpack",
-    "build:deploy": "rm -r docs  && npm run build:prod && mv dist docs && git add . && git commit -m \"Fix drawer drag \"  && git push origin master",
+    "build:deploy": "rm -r docs  && npm run build:prod && mv dist docs && git add . && git commit -m \"Last change today in style \"  && git push origin master",
     "start": "webpack-dev-server --open"
   },
   "author": "Esteban Muñoz",
