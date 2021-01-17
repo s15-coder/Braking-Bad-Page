@@ -1,6 +1,5 @@
 let navChilds = document.querySelectorAll(".links");
 let origin = window.location.origin;
-
 if (origin == "https://s15-coder.github.io") {
     origin = "https://s15-coder.github.io/" + "Braking-Bad-Page";
 }
@@ -23,8 +22,3 @@ navChilds[3].addEventListener('click', (e) => {
 navChilds[4].addEventListener('click', (e) => {
     window.location.href = `${origin}/html/deaths.html`;
 });
-
-export function paintBottomBorder(idDiv) {
-    navChilds[idDiv].className += " selected";
-}
-

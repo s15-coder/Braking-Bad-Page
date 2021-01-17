@@ -101,7 +101,7 @@ module.exports = {
         }),
         new CopyWebpackPlugin({
             patterns: [
-                { from: 'src/css/static', to: 'css/static' },
+                { from: 'src/css/', to: 'css/' },
                 { from: 'src/assets/', to: 'assets/' },
             ],
         }), new CleanWebpackPlugin()
