@@ -20,7 +20,7 @@ export function createCard(characterModel) {
     return div;
 }
 
-function closeAlertCharacter() {
+function listenersToClose() {
     const cancelIcon = document.querySelector(".cancel-icon");
     cancelIcon.addEventListener("click", cleanContentOfAlert);
     charactersAlert.addEventListener("click", cleanContentOfAlert);
@@ -28,11 +28,17 @@ function closeAlertCharacter() {
 function cleanContentOfAlert() {
     charactersAlert.innerHTML = "";
     charactersAlert.style.display = "none";
+    body.style.overflow = "auto";
 }
 
 
 function showAlertCharacter(characterModel) {
     body.style.overflow = "hidden";
+    
+    //Locate alert in current ubication
+    const scrolledDinstance = window.scrollY;
+    charactersAlert.style.top = `${scrolledDinstance}px`;
+
     charactersAlert.style.display = "flex";
     charactersAlert.innerHTML = `
     <div class="alert-character__card">
@@ -69,5 +75,5 @@ function showAlertCharacter(characterModel) {
             </div>
         </div>
     </div>`;
-    closeAlertCharacter()
+    listenersToClose()
 }
