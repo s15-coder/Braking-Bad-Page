@@ -4,19 +4,20 @@ import 'regenerator-runtime/runtime';
 import "./components/drawer-listener";
 import "./components/screen-selected";
 import { CharacterProvider } from "./providers/provider-character";
-import {CharacterCard} from "./components/character-cards";
-const charactersDiv = document.querySelector(".characters");
+import { createCard } from "./components/character-cards";
 
+const charactersDiv = document.querySelector(".characters");
 const characterProvider = new CharacterProvider();
-const characterCard = new CharacterCard();
 let cards = [];
+
+//Create every card of character.
 characterProvider.getCharacters()
     .then(function (characterObject) {
         charactersDiv.style.height = "max-content";
         for (const i in characterObject) {
-            cards.push(characterCard.createCard(characterObject[i]));
+            cards.push(createCard(characterObject[i]));
+            charactersDiv.appendChild(cards[i]);
         }
-        cards.forEach((item, i)=>{
-            charactersDiv.appendChild(item);
-        });
+        
     });
+
