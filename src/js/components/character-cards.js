@@ -21,8 +21,8 @@ export function createCard(characterModel) {
 }
 
 function listenersToClose() {
-    const cancelIcon = document.querySelector(".cancel-icon");
-    cancelIcon.addEventListener("click", cleanContentOfAlert);
+    // const cancelIcon = document.querySelector(".cancel-icon");
+    // cancelIcon.addEventListener("click", cleanContentOfAlert);
     charactersAlert.addEventListener("click", cleanContentOfAlert);
 }
 function cleanContentOfAlert() {
@@ -34,12 +34,17 @@ function cleanContentOfAlert() {
 
 function showAlertCharacter(characterModel) {
     body.style.overflow = "hidden";
-    
+
     //Locate alert in current ubication
     const scrolledDinstance = window.scrollY;
     charactersAlert.style.top = `${scrolledDinstance}px`;
 
     charactersAlert.style.display = "flex";
+    //Fill occupations dynamicly
+    let occupations = ``;
+    characterModel.occupation.forEach(occupation => {
+        occupations += `<span class="alert-character__card-data-occupation">${occupation}</span>    `
+    });
     charactersAlert.innerHTML = `
     <div class="alert-character__card">
         <div class="cancel-icon">
@@ -49,12 +54,12 @@ function showAlertCharacter(characterModel) {
         <div class="alert-character__card-divider"></div>
         <div class="alert-character__card-container-data">
             <div class="alert-character__card-data">
-                <b>Nombre:</b>
+                <b>Name:</b>
                 <span>${characterModel.name}</span>
             </div>
             <div class="alert-character__card-data">
                 <b>Portrayed:</b>
-                <span>${characterModel.name}</span>
+                <span>${characterModel.portrayed}</span>
             </div>
             <div class="alert-character__card-data">
                 <b>Birthday:</b>
@@ -62,8 +67,7 @@ function showAlertCharacter(characterModel) {
             </div>
             <div class="alert-character__card-data">
                 <b>Occupation:</b>
-                <span class="alert-character__card-data-occupation">High School Chemistry Teacher</span>
-                <span class="alert-character__card-data-occupation">Meth King Pin</span>
+            ${occupations}
             </div>
             <div class="alert-character__card-data">
                 <b>Nickname:</b>

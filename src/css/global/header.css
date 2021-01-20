@@ -1,4 +1,6 @@
 * {
+    /* To avoid blue color when element is selected in mobile device */
+    -webkit-tap-highlight-color: transparent ;
     font-family: sans-serif;
     margin: 0;
     box-sizing: border-box;
@@ -51,7 +53,6 @@ h1 {
 }
 
 .nav-links a {
-
     font-size: 20px;
     font-weight: 700;
     margin: 4px 0;
@@ -110,7 +111,6 @@ nav {
         width: max-content;
     }
     .nav-links {
-
         margin-right: 70px;
         display: flex;
         align-items: center;
@@ -124,7 +124,6 @@ nav {
         transition: none;
     }
     .nav-links a {
-
         font-size: 2vw;
         font-weight: 100;
         padding: 0 25px;
@@ -133,32 +132,27 @@ nav {
         color: #fff;
         display: inline-block;
     }
-    .nav-links div{
+    .nav-links div {
         display: flex;
         align-items: center;
         height: 100%;
     }
-    .nav-links div:hover{
+    .nav-links div:hover {
         cursor: pointer;
-        background-color:  rgb(34, 128, 84);
+        background-color: rgb(34, 128, 84);
     }
-    .selected{
+    .selected {
         border-bottom: 5px solid #fff;
     }
 }
 
 @media screen and (max-width: 300px) {
-    
-    
-.header-container h1 {
-    font-size: 8vw;
-    margin: 10px;
-    display: inline-block;
-}
-
-
-.nav-links a {
-
-    font-size: 5vw;
-}
+    .header-container h1 {
+        font-size: 8vw;
+        margin: 10px;
+        display: inline-block;
+    }
+    .nav-links a {
+        font-size: 5vw;
+    }
 }
