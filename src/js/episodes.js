@@ -3,7 +3,7 @@ import 'regenerator-runtime/runtime';
 
 import "./components/drawer-listener";
 import "./components/screen-selected";
-import { EpisodesProvider } from "./providers/provider-episodes";
+import { EpisodesProvider } from "./providers/provider-episode";
 import { createEpisodeCard, episodesDiv, displayAlertCharacters } from "./components/episode-card";
 
 const episodesProvider = new EpisodesProvider();

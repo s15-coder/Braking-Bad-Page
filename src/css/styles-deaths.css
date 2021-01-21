@@ -1,0 +1,46 @@
+.deaths {
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 90px;
+}
+.death{
+    max-width:  90%;
+    font-size: 16px;
+    padding: 15px;
+    border: 1px solid rgba(128, 128, 128, 0.233);
+box-shadow: 1px 1px 5px rgba(109, 106, 106, 0.274);
+    border-radius: 20px;
+    margin: 10px;
+}
+.key{
+    font-weight: 700;
+    display: inline-block;
+}
+.value{
+    display: inline-block;
+}
+.death__info{
+    margin: 7px 0;
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 900px) {
+    .death{
+        width: 230px;
+        min-width: 230px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .deaths{
+        margin: 140px 0;
+
+    }
+    .death{
+        font-size: 17px;
+        width: 300px;
+        min-width: 230px;
+    }
+}   

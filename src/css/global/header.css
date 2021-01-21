@@ -1,3 +1,8 @@
+
+    *::selection {
+        background-color: rgb(2, 102, 53);
+        color: #fff;
+    }
 * {
     /* To avoid blue color when element is selected in mobile device */
     -webkit-tap-highlight-color: transparent ;
@@ -19,13 +24,11 @@ header {
     z-index: 100;
 }
 
-h1 {
-    color: #fff;
-}
 
 .header-container img {
-    visibility: hidden;
-    height: 0px;
+    margin-left: 2vw;
+    visibility: visible;
+    height: 65px;
 }
 
 .header-container h1 {
@@ -90,10 +93,6 @@ nav {
         height: 90px;
         justify-content: space-between;
     }
-    h1 {
-        width: 0;
-        visibility: hidden;
-    }
     .menu-icon {
         width: 0;
         font-size: 0;
@@ -133,6 +132,7 @@ nav {
         display: inline-block;
     }
     .nav-links div {
+        transition: 0.2s;
         display: flex;
         align-items: center;
         height: 100%;

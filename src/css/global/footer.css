@@ -17,7 +17,7 @@ footer {
 .footer__links-container {
     margin: 30px 10px;
     grid-template-columns: repeat(auto-fill, minmax(33vw, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(40px, 1fr));
+    grid-template-rows: repeat(3, 40px);
     column-gap: 6px;
     row-gap: 12px;
     display: grid;
@@ -44,8 +44,16 @@ footer {
 }
 
 .link a {
+    transition: 0.2s;
     color: #fff;
     text-decoration: none;
+}
+.link a:hover {
+    color: rgba(212, 209, 209, 0.507);
+}
+
+.link a:active {
+    color: rgba(190, 187, 187, 0.507);
 }
 
 @media screen and (min-width: 900px) {
@@ -55,7 +63,7 @@ footer {
     .footer__links-container {
         padding: 30px 0;
         margin: 40px 10;
-        row-gap: 20px;
+        row-gap: 30px;
     }
 .owner{
     margin: 20px 0 20px;

@@ -17,6 +17,7 @@
 }
 
 .character {
+    transition: 0.2s;
     box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.171);
     border-radius: 20px;
     border: 1px solid rgba(128, 128, 128, 0.178);
@@ -25,7 +26,7 @@
 }
 
 .character:hover {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.329);
     cursor: pointer;
 }
 
@@ -81,6 +82,7 @@
     flex-wrap: wrap;
     width: 80%;
     height: max-content;
+    max-height: 75%;
     background-color: #fff;
     position: absolute;
 }
@@ -118,6 +120,10 @@
 }
 
 .cancel-icon i:active {
+    background-color: rgb(0, 0, 0);
+}
+
+.cancel-icon i:hover {
     background-color: rgba(0, 0, 0, 0.301);
 }
 
@@ -155,6 +161,7 @@
     .alert-character__card{
         max-width: 310px;
         height: max-content;
+        max-height: 85%;
     } .alert-character__card img{
         max-width: 150px;
        

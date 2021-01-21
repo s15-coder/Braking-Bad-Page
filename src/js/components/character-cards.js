@@ -21,11 +21,12 @@ export function createCard(characterModel) {
 }
 
 function listenersToClose() {
-    // const cancelIcon = document.querySelector(".cancel-icon");
-    // cancelIcon.addEventListener("click", cleanContentOfAlert);
-    charactersAlert.addEventListener("click", cleanContentOfAlert);
+    const closeIcon = document.querySelector(".fa-times-circle");
+    closeIcon.addEventListener("click", function (e) { cleanContentOfAlert(e, this) });
+    charactersAlert.addEventListener("click", function (e) { cleanContentOfAlert(e, this) });
 }
-function cleanContentOfAlert() {
+function cleanContentOfAlert(e, element) {
+    if (e.target != element) return;
     charactersAlert.innerHTML = "";
     charactersAlert.style.display = "none";
     body.style.overflow = "auto";

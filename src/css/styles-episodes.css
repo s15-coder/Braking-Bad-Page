@@ -28,6 +28,7 @@
 }
 
 .episode .episode__data i {
+    transition: 0.2s;
     cursor: pointer;
     border-radius: 30px;
     padding: 10px 10px;
